@@ -1,0 +1,16 @@
+void rvereseArray(int arr[], int start, int end)
+{
+    while (start < end)
+    {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+}    
+void rotateArr(int arr[], int d, int n){
+     rev(arr,0,n-1);
+     rev(arr,0,n-1-d);
+     rev(arr,n-d,n-1);
+}
